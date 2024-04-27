@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,textarea,button,select,a{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus,a:visited,a:active{
+    outline: none;
 }
 body {
     width: 100vw;
@@ -16,6 +25,13 @@ body {
     background: linear-gradient(90deg, #d1d1d1, #a9a9a9, #b2b2b2, #959595, #b3b3b3, #a0a0a0, #959595, #8a8a8a, #707070, #696969);
   background-size: 100% 1000%; 
   animation: shimmer 14s infinite linear;
+
+    
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #board {
