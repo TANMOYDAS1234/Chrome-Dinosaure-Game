@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    background: linear-gradient(90deg, #d1d1d1, #a9a9a9, #b2b2b2, #959595, #b3b3b3, #a0a0a0, #959595, #8a8a8a, #707070, #696969);
+  background-size: 100% 1000%; 
+  animation: shimmer 14s infinite linear;
+}
+
+#board {
+    background-color: lightgray;
+    border-bottom: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Define the keyframes for the animation */
+@keyframes shimmer {
+    0% {
+      background-position: -100000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
